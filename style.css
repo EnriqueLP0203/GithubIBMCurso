@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #2d3748;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 48px 56px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #718096;
+  line-height: 1.6;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+.flotando {
+  animation: flotar 3s ease-in-out infinite;
+}
